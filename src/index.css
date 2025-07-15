@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-gray-100 font-dots;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .heading {
+    @apply font-dots text-4xl md:text-5xl tracking-widest text-center uppercase;
+    letter-spacing: 0.15em;
+  }
+  .subheading {
+    @apply font-dots text-2xl tracking-widest text-center uppercase;
+    letter-spacing: 0.12em;
+  }
+  .card {
+    @apply bg-gray-800 rounded-xl p-6 text-gray-100 font-dots text-lg shadow-none border border-gray-700;
+  }
+  .nav-link {
+    @apply font-dots text-base uppercase tracking-widest px-4 py-2 hover:text-gray-300 transition;
+  }
+  .section-bubble {
+    z-index: 0;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+} 
